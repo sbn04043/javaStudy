@@ -26,9 +26,27 @@ package day0513;
 //최소화한다.
 //특히, static 메소드는 메인 메소드, ScannerUtil 외에는 사용하지 않는다.
 
+import types.Student;
+
 public class Ex03Class {
     public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.id = 1;
+        s1.name = "김철수";
+        s1.korean = 80;
+        s1.english = 81;
+        s1.math = 81;
 
+        s1.printInfo();
+
+        Student s2 = new Student();
+        s2.id = 2;
+        s2.name = "이영희";
+        s2.korean = 90;
+        s2.english = 90;
+        s2.math = 91;
+
+        s2.printInfo();
     }
 
 }
