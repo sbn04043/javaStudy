@@ -26,10 +26,15 @@ package day0513;
 //최소화한다.
 //특히, static 메소드는 메인 메소드, ScannerUtil 외에는 사용하지 않는다.
 
+//생성자(Constructor)
+//해당 클래스 변수가 초기화 될 때 호출되는 메소드
+//처음 해당 클래스 변수에 들어갈 외부의 값이나 초기화 되는 값
+//또는 특정한 작업을 할 때 호출되는 특수한 메소드
 import types.Student;
 
 public class Ex03Class {
     public static void main(String[] args) {
+        //Student 클래스 변수 선언 및 초기화
         Student s1 = new Student();
         s1.id = 1;
         s1.name = "김철수";
