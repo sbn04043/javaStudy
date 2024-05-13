@@ -64,10 +64,18 @@ public class Ex03Class {
 
         s2.printInfo();
 
-        Student s3 = new Student();
+        Student s3 = new Student(10, "김준수", 95, 95, 96);
         s3.printInfo();
-    }
 
+        Student s4 = new Student();
+        s4.id = 2;
+        s4.name = "이영희";
+        s4.korean = 90;
+        s4.english = 90;
+        s4.math = 91;
+
+        System.out.println("s2와 s4 비교: " + s2.equals(s4));
+    }
 
 
 }
