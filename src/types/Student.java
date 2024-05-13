@@ -18,4 +18,14 @@ public class Student {
     public int calculateSum() {
         return korean + english + math;
     }
+
+    public double calculateAverage() {
+        return (double) calculateSum() / 3;
+    }
+
+    public void printInfo() {
+        System.out.printf("%2d. %s\n", id, name);
+        System.out.printf("국어: %3d 영어: %3d 수학; %3d\n", korean, english, math);
+        System.out.printf("총합: %3d 평균: %6.2f", calculateSum(), calculateAverage());
+    }
 }
