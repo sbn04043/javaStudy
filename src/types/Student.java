@@ -26,6 +26,17 @@ public class Student {
     public void printInfo() {
         System.out.printf("%2d. %s\n", id, name);
         System.out.printf("국어: %3d 영어: %3d 수학; %3d\n", korean, english, math);
-        System.out.printf("총합: %3d 평균: %6.2f", calculateSum(), calculateAverage());
+        System.out.printf("총합: %3d 평균: %6.2f\n", calculateSum(), calculateAverage());
+    }
+
+    //파라미터가 있는 생성자
+    //생성자의 경우, 리턴 타입을 따로 적지 않고
+    //메소드의 이름은 무조건 클래스의 이름과 통일
+    public Student(int id) {
+
+    }
+    //파라미터 없는 생성자
+    public Student() {
+        
     }
 }
