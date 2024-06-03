@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 01</title>
+</head>
+<body>
+<!--
+    CSS(Cascading Style Sheet)
+    특정 태그나 특정 선택 요소에 스타일을 입힐 때 사용
+    Cascading: 부모 태그에 적용된 스타일은 자식 태그에게도 적용된다.
+
+    1. 태그 안 style 속성 적용
+    2. head 내부에 style 태그 만들어서 적용
+    3. css 파일 생성 후 불러오기
+-->
+
+<!--
+    색깔 표현
+    어떤 것의 색깔인지 무슨 색을 사용할지 지정
+    1. color:해당 태크의 나오는 글자 색
+    2. background-color: 해당 태그 영역의 바탕색
+    3. border: 해당 태그 영역의 테두리색
+
+    지정 할 때에는
+    1. 특정 색의 이름 지정 (red green blue)
+    2. RGB값 적기 (#ffffff)
+    3. HexaCode값 적기
+-->
+
+<h1>1. 태그 안 style 속성 적용</h1>
+<p style="color:red;">이것은 붉은색 글씨입니다</p>
+<p style="color:blue;">이것은 파란색 글씨입니다</p>
+<ul style="color:green;">초록색 UL입니다.
+    <li>설정 안 한 리스트</li>
+    <li style="color:darkblue;">darkblue 리스트</li>
+    <li style="color:darkviolet">darkviolet 리스트</li>
+</ul>
+
+<hr/> <!-- 가로로 긴 줄 출력 영역을 나눌 때 사용 -->
+<h1>바탕색 적용</h1>
+<p style="background-color:red;">빨간색 바탕의 글씨</p>
+<p style="background-color:deeppink;">핑크색 바탕의 글씨</p>
+<p style="background-color:black; color:white;">검은색 바탕과 하얀 글씨</p>
+
+<hr/>
+<h1 style="border: 1px solid coral;">1px solid coral 테두리 적용</h1>
+
+<hr/>
+<h3 style="color: tomato;">tomato 색 지정</h3>
+<h3 style="color: rgb(255, 99, 71);">rgb값으로 나타낸 토마토</h3>
+<h3 style="color: #ff6347;">16진 표현법으로 나타낸 토마토</h3>
+
+<hr/>
+<h1>CSS 복합적으로 사용</h1>
+<h3>검은색 3px 배경은 빨강, 글자는 베이지색인 hell world</h3>
+<h1 style="border: 3px solid black;
+    background-color: red;
+    color: beige;">hello world</h1>
+
+<!--페이지의 글자들을 읽을 수 있는 색상으로 조합해야된다.-->
+<h1 style="color: yellow; background-color: gold;">안 좋은 색상의 조합</h1>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
