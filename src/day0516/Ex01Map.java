@@ -17,7 +17,7 @@ import types.Student;
 
 import java.util.HashMap;
 
-public class Map {
+public class Ex01Map {
     public static void main(String[] args) {
         HashMap<String, Student> map = new HashMap<>();
         //Student 클래스 변수 선언 및 초기화

@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>CSS 05</title>
+    <style>
+        /* 태그 이름을 적어주면 해당 태그들은 해당 CSS 설정이 된다. */
+        p {
+            font-size: 40px;
+            color: green;
+        }
+
+        /*
+        태그의 속성 안에는 특정 1개의 태그만 선택할 수 있도록 id 값을 줄 수 있다.
+        이 id 값은 중복될 수 없고 한개의 태그마다 고유의 값이 돼야한다.
+        id 값을 줄 때는 #id로 설정한다.
+         */
+
+        #myP {
+            color: red
+        }
+
+        /*
+        여러개의 태그에 동일한 CSS를 설정해야 하면
+        class 속성으로 묶으면 된다
+        클래스 속성으로 묶고 난 후 CSS 셀렉터로
+        .클래스이름 으로 묶어준다.
+         */
+
+        .important {
+            font-size: 50px;
+            text-decoration: underline;
+            color: darkred;
+        }
+
+        /* CSS 셀렉터를 조합해 사용할 수 있다. */
+        p.important {
+            color: yellow;
+        }
+
+        /* div 태그 안의 p 태그 */
+        div p {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!--
+    CSS Selector
+    CSS를 태그 안에 style 속성으로 저장하는 것이 아닌
+    별개의 style 태그 혹은 css 파일을 분리할 때에는
+    Selector를 사용하여 어떤 부분에 CSS를 적용시킬지 설정한다.
+-->
+<p>Selector를 이용한 CSS</p>
+<p id="myP">#myP를 이용한 CSS</p>
+
+<!-- h1 id="myP">여러개의 요소에 myP를 적용하면 안 된다.</h1> -->
+<p class="important">중요한 요소 1번</p>
+
+<h1 class="important">중요한 헤드1</h1>
+
+<div>
+    <p>div 내부의 p</p>
+
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

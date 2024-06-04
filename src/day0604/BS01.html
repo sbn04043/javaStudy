@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>BS 01</title>
+    <!--
+    BootStrap
+    트위터 UI를 라이브러리화 시킨 CSS 라이브러리다.
+    단순히 태그들의 모양을 예쁘게 만든 것 뿐만 아니라
+    화면 레이아웃을 정할 때도 부트스트랩을 사용하면 편하다.
+    또한 반응형 웹을 지원한다.
+
+    반응형 웹
+
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </head>
 <body>
-$END$
+<h1>부트스트랩을 적용하기</h1>
+<input type="text" class="form-control w-50 m-3">
+
+<!--
+부트스트랩 그리드 시스템
+div 태그를 사용해 화면을 가로로 12분할로 관리하는 것을 권장
+1. div 컨테이너를 생성
+2. row div 생성
+3. col div 생성
+    row 안에는 총 12 크기의 col div를 넣을 수 있다.
+    지정하지 않으면 자동으로 12에 맞춰 분배가 되고
+    12가 넘어가면 다음 줄로 출력이 된다
+-->
+
+<div class="container text-center">
+    <h1>부트스트랩 그리드 시스템</h1>
+    <div class="row mt-2">
+        <div class="col" style="background-color: red;">red auto(4)</div>
+        <div class="col" style="background-color: green;">green auto(4)</div>
+        <div class="col" style="background-color: blue;">blue auto(4)</div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-2" style="background-color: red;">red(2)</div>
+        <div class="col" style="background-color: green;">green auto(5)</div>
+        <div class="col" style="background-color: blue;">blue auto(5)</div>
+    </div>
+
+    <h3>가운데 정렬</h3>
+    <div class="row mt-2 justify-content-center">
+        <div class="col-2" style="background-color: red;">red(2)</div>
+        <div class="col-2" style="background-color: green;">green(2)</div>
+        <div class="col-2" style="background-color: blue;">blue(2)</div>
+    </div>
+
+    <h3>오른쪽 정렬</h3>
+    <div class="row mt-2 justify-content-end">
+        <div class="col-2" style="background-color: red;">red(2)</div>
+        <div class="col-2" style="background-color: green;">green(2)</div>
+        <div class="col-2" style="background-color: blue;">blue(2)</div>
+    </div>
+
+    <h3>around 정렬</h3>
+    <div class="row mt-2 justify-content-around">
+        <div class="col-2" style="background-color: red;">red(2)</div>
+        <div class="col-2" style="background-color: green;">green(2)</div>
+        <div class="col-2" style="background-color: blue;">blue(2)</div>
+    </div>
+
+    <h3>between 정렬</h3>
+    <div class="row mt-2 justify-content-between">
+        <div class="col-2" style="background-color: red;">red(2)</div>
+        <div class="col-2" style="background-color: green;">green(2)</div>
+        <div class="col-2" style="background-color: blue;">blue(2)</div>
+    </div>
+
+    <h3>evenly 정렬</h3>
+    <div class="row mt-2 justify-content-evenly">
+        <div class="col-2" style="background-color: red;">red(2)</div>
+        <div class="col-2" style="background-color: green;">green(2)</div>
+        <div class="col-2" style="background-color: blue;">blue(2)</div>
+    </div>
+
+    <h1>세로 정렬 방법 align-items-(value)</h1>
+    <h3>가운데 세로 정렬</h3>
+    <div class="row mt-2 align-items-center" style="height: 200px; background-color: black">
+        <div class="col-2" style="background-color: red; height: 50px;">red(2)</div>
+        <div class="col-2" style="background-color: green; height: 50px;">green(2)</div>
+        <div class="col-2" style="background-color: blue; height: 50px;">blue(2)</div>
+    </div>
+
+    <h3>가운데 아래 정렬</h3>
+    <div class="row mt-2 align-items-end" style="height: 200px; background-color: black">
+        <div class="col-2" style="background-color: red; height: 50px;">red(2)</div>
+        <div class="col-2" style="background-color: green; height: 50px;">green(2)</div>
+        <div class="col-2" style="background-color: blue; height: 50px;">blue(2)</div>
+    </div>
+
+</div>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
