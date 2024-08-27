@@ -1,0 +1,44 @@
+프레임워크란? (스프링, 컬렉션)
+    속성 + 기능(자체 메소드)
+컨테이너란? 냉장고
+    속성만(docker는 저장만 가능)
+라이브러리란?
+
+
+
+이미지: 설계도(클래스 설계도)
+컨테이너: 인스턴스
+볼륨: 테이블
+
+객체: instance 1개
+Collection: instance를 여러개
+
+동일 차원: instance
+다른 차원: element
+
+
+컬렉션 프레임워크
+
+
+jpa: 설계도
+hibernate: 속성 + 기능
+
+Primitive type: number
+Reference type: string
+
+프로그램: 이미지
+프로세스: 객체
+쓰레드: 기능(메소드) 연결
+쓰레드 + 데이터 -> 프로세스
+
+annotation vs notation
+notation: 정보를 표현하는 규칙이나 시스템 ex) json
+annotation(기계어에서의 주석): 코드, 문서, 데이터에 추가적인 정보를 제공하거나
+    설명하는 메타데이터. 인터페이스의 개념 ex) @Override
+    메타데이터: 데이터에 대한 정보를 제공하는 데이터
+comment(인간이 보는 주석):
+
+디자인 패턴
+    생성 패턴: 인스턴스 객체
+    행동 패턴: 인터페이스      -> class
+    행동패턴: 자료구조

@@ -1,0 +1,26 @@
+parameter vs argument
+    parameter: instance(선언) // eager
+    argument: class(실행) // lazy
+
+선언 -> 로딩 -> 실행 -> 소멸
+
+    도커: run 후 exec
+    disk = storage, memory = elasticity
+field vs area(클래스에서)
+    field: 클래스에서 변수(state)
+    area: 메서드 공간(state 변경 역할) ex) getter setter
+
+생성자와 소멸자(메소드)
+    생성자: 인스턴스를 생성하는 메소드(클래스를 메모리로 올리는(로딩) 메소드)
+    팩토리 메서드: lazy 처리
+    소멸자: 다 사용한 인스턴스를 메모리 상에서 지우는 메서드(자바에서는 갈비지 컬렉터가 알아서)
+
+함수 vs 변수
+    함수: public Member create() { return new Member(); } Member m = create();
+    변수: var m = new Member();
+
+컨테이너 프레임워크 라이브러리 자료구조
+컴퍼넌트 빌더: 람다 쓸 때 필요 람다함수 람다식
+
+dockerfile: CLI 방식을 사용해야 한다.
+docker-compose: 데이터가 날아가도 복구 가능

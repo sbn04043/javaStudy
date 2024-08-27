@@ -1,0 +1,30 @@
+stream이란?
+    ex) TV(제어가 방송국) vs Youtube(제어가 사용자: 제어의 역전)
+
+    iterator pattern
+
+    list.stream(): (for loop)
+
+    list.forEach(v -> {})를 많이 쓰자.
+
+    외부 반복(이때까지 한 반복 next로 움직임)
+
+    stream은 내부 반복(람다식)
+
+    stringList.stream(s -> System.out.println(s));
+
+    stringList.stream().map(s -> Integer.parseInt(s)).forEach(i -> System.out.println(i));
+
+소스(Source): 원천, 인간이 읽을 수 있게 변환(소스 첨가)
+    인코딩: 인간 언어를 기계어로
+    디코딩: 기계어를 인간 언어로
+
+    데이터소스: 데이터를 읽을 수 있게 변환
+
+프렉탈 구조: 작은 구조가 전체 구조와 닮은형태로 끝없이 되풀이되는 구조(조금만 이해하면 모두 이해 가능)
+컨테이너: 객체다.
+
+use 관계(use-a): 클래스가 만들어지면 관계성을 가지게 된다.
+    Is-A: 2형식(동일) ex) Client is Member
+    Has-A: 3형식(종속) ex) Client has Item / eager
+    Use-A: Has-A에서 발생 / lazy: 사용할(필요한) 시점에 객체 생성
