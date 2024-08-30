@@ -1,0 +1,28 @@
+IP(Internet Protocol): 통신 규약(주소(address: where), 어쩔 때(when: case)) -> 서버와 클라이언트 간의 약속
+    Internet:
+    Protocol:
+
+
+
+    HTTP(Hyper Text Transfer Protocol)
+
+Server 시나리오
+
+
+    4. ACG(Access Control Group): 보안 그룹
+
+    CIDR(Classless Inter-Domain Routing)
+    인터넷 상의 데이터 라우팅 효율성을 향상시키는 IP 주소 할당 방법
+
+
+    네트워크는 다 변수(내 VPC 위치)
+
+    loadBalancer:
+    BareMetal: 실시간 서버(금융권 등 시간 정확해야 하는 경우)
+    NatGateway: 사설 서버 내에서 공인 IP와 공인 시켜 외부로 내보낼 때 사용
+
+    0.0.0.0/??? -> ???: subnet IP 할당
+    128 64 32 16 8 4 2 1
+     0   0 0  1  1 0 0 0  1.1 1 ~ 50
+     0.0.0.0 ~ 255.255  ~ 32억
+     192 168  . 1 ~ 50

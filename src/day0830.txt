@@ -1,0 +1,47 @@
+아키텍처링:
+    컨테이너: 함수
+    컴포넌트: 변수
+
+    nest.js: 프레임워크(컴포넌트)
+    react: library(컨테이너)
+
+    아카이브: 컨테이너(속성)와 컨포넌트(기능)의 결합
+    자바 아카이브
+        배포: remote 를 사용해 공유지로 옮기기(migration)
+            -> 서버가 우리 입장에선 host 됨(아카이브를 올림)
+            -> 로컬에서 완성하고 리모트에 옮김(비용 문제)
+            -> 이를 해결하기 위해 압축(jar, war)을 통해 파일로 만들어 배포한다.
+            -> 아카이브 파일로 리모트에 올림
+
+        jar vs war
+            jar
+                war와 다르게 java만 아카이브로 만든다.(프레임워크 안에 있어야 함)
+                nest.js로 화면만 아카이브로 만든다.
+
+            war
+                Servlet: 자바에서 HTML을 작성할 수 있게 해주는 것
+                scriptlet: HTML에서 자바를 작성할 수 있게 해주는 것
+                    접미사 let: 작은(little) 의미를 가짐 -> 쪼갠다
+                    build 하면 합쳐진다.
+
+    정반합: 이진분류법(하나를 두개로 쪼개는 것)
+
+    스칼라: 점(하나)
+    벡터: 선형(Linear)
+    행렬: 2차원
+    텐서: 3차원(인공지능 영역)
+
+    벡터 행렬 간에는 데이터 손상 없이 다닐 수 있음
+
+url vs uri
+
+requestParam vs requestBody
+    Param: 일부분만 보내겠다(필요한 값 하나하나, <form> 태그 X)
+    Body: HTML에서 body 전체를 던짐(<form> 태그로 던짐) name이 json의 키, value가 json의 value가 됨
+
+    CRUD: command(CUD), Query(R)
+        command: 만드는 애(CU), 지우는 애(D)
+            있던 애면 U, 없던 애면 C
+
+        Query: Post(다 던짐), Get(골라서 던짐)
+

@@ -1,0 +1,69 @@
+함수 vs 변수
+    멱등성: 동일한 연산을 수행해도 결과가 달라지지 않는 성질
+        3 -> 5 / 5 -> 7 / 7 -> 9 / ...
+    함수: 박스 -> 상수로 처리(멱등성)
+        컨테이너형 함수(내장 기능이 X)
+        프레임워크형 함수(내장 기능이 O)
+            게터 세터는 기능으로 보지 않음(모델)
+
+        쿼리 DSL: 자바에서 데이터베이스 쿼리 실행
+    변수: 그릇
+
+CQRS 패턴(command(명령), query(질의), responsibility(책임), segregation(분리))
+    command: 시스템 상태를 변경하는 작업
+    query: 시스템 상태를 조화하는 작업
+
+    DDL vs DML
+    DDL(Data Definition Language): 대상이 테이블 -> 데이터 베이스 구조를 정의하거나 변경하는 SQL 명령어
+    DML(Data Manipulation Language): 대상이 로우 -> 데이터 베이스의 데이터를 조회하거나 조작하는 SQL 명령어
+        command query(Query DSL) 로 나눔
+
+Query DSL(Domain-Specific Language)
+    DSL: 도메인에 특화된 프로그래밍 언어 혹은 언어의 확장.
+    domain: QClass 우리 눈엔 자바 클래스, 실행하면
+    상태변화 -> entity(원본, 자바 버전) 으로 처리
+
+
+    language:
+
+    코드로 쿼리를 작성해 문법 오류 확인
+    자동 완성 기능
+    복잡한 쿼리, 동적 쿼리 작성 가능
+    제약 조건 등을 메서드 추출로 재사용 가능
+    JPQL 과 유사해 쉽게 적응 가능
+
+    findById, findAll 은 JPA 자체 메서드가 빠르고
+    나머지는 Query DSL이 더 빠르다.
+    하지만 findAll 은 대규모 데이터 처리에 불리하다.
+
+block vs non-block -> connection 에서 사용
+    block: 직렬(security) / command ex) mysql
+    non-block: 병렬(performance, 속도) / search, query DSL ex) 채팅, 몽고 DB
+    block default, transaction non-block
+
+    QClass: non-block(쿼리), 상태 변경 X
+    Entity: block(command) 상태 변경 O
+
+Swagger
+    Spring-Fox: 스프링 2 버전 지원 / 업데이트 끝남
+    Spring-Doc: 스프링 3 버전 지원 / 업데이트 진행 중
+    -> Spring-Doc 사용할 것이다.
+
+HyperText -> XML(eXtensible Markup Language)
+    Hyper Text: 텍스트 내에 하이퍼링크(사용자가 다른 문서나 페이지로 쉽게 이동 할 수 있는 링크)
+    XML: 데이터를 저장하고 전송하기 위한 마크업 언어
+
+subnet vs gateway
+    subnet: 인트라넷(호실)
+    gateway: 인터넷(건물)
+
+로드 밸런싱
+    네트워크 상에서 트래픽 부하 분산 하는 L4 스위치
+    트래픽: 네트워크 내부에 일정 시간동안 흐르는 데이터 양(동접자)
+    분산: 자바에서 컨트롤러가 함
+
+WAS(Web Application Server, tomcat) vs WS(Web Server, apache)
+    WAS: 동적 요청 처리(어플리케이션 위에서 돎), 메서드
+    WS: 클라이언트의 요청 처리, 정적 컨텐츠(HTML CSS JavaScript)를 클라이언트에 반환
+    WAS WS 사이에서 filter로 토큰 체크
+
