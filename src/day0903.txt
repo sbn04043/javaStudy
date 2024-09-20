@@ -1,0 +1,47 @@
+OOP vs FP
+Object-Oriented Programming
+
+Functional Programming
+
+설명했으니까 알아서 정리해보자
+
+
+백엔드에 쓰이는 언어만 200개가 넘음
+프론트에서는 JS(javascript)가 주류가 됨
+
+typescript: 타입의 유무
+
+리액트:
+
+vue.js: 리액트보다 쉬움(리액트도 쉬운데 redux, next 가 어려움)
+
+SPA(Single Page Application) vs MPA(Multiple Page Application)
+    Application: 클라이언트 디바이스(.jar와 통신)에서 실행가능한 파일
+    SPA: Ebook: 인터넷 있어야 작동. 메모리 최대한 안 쓰게, 토큰 처리 필요(보안)
+    MPA: Book: 인터넷 없어도 작동
+
+    로컬 변수를 state(useState) 라고 한다.
+    최대한 안 써야 된다.(메모리적으로) -> stateless(무상태 프로그래밍)
+
+npm vs yarn
+    대표적인 패키지(라이브러리) 관리 툴(자바로 따지면 maven, gradle)
+    자바스크립트 런타임 환경인 노드(node.js)의 패키지 관리자
+    CLI가 디폴트
+    next.js -> 스프링 / 리액트 ->   자바 -> 타입스크립트(모던 자바스크립트)
+
+    속도는 비슷, yarn이 안전
+
+react Component: 자바로 따지면 객체
+    상태 값을 이용해 UI 표현
+
+구조 분해 할당
+
+댄 아브라모프
+
+react에서 프롭스 전해주는 것을 drilling 이라 한다.
+속성: props, 기능: event
+
+이벤트는 자식 먼저(버튼) 받고 부모(화면)가 받는다. -> 이벤트 버블링(bubbling)
+
+REACT 에서 CRUD 갖고오는 방법
+

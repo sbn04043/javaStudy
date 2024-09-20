@@ -1,0 +1,2 @@
+Aggregate Operation(집계 함수)
+    pipeline: source, intermediate operation(중간 연산), terminal operation 으로 구성

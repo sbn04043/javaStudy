@@ -1,6 +1,6 @@
 package day0619;
 
-public class TreeOrder {
+public class TreeTraverse {
     public static void main(String[] args) {
         int dest = 20;
 
